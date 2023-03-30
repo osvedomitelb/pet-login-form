@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WoodWorks.INC</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+
+    <div id = "wrapper">
+        <header>Welcome to WoodWorks.INC</header>
+
+        <div id = "textSection">
+            <h2>WoodWorks.INC is back.</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at nisl in libero laoreet pretium sit amet nec odio.
+                Sed venenatis venenatis tellus ac tristique. Aenean accumsan dignissim scelerisque. Quisque eget dui molestie nisi fermentum
+                varius ac nec sem. Aliquam egestas ac urna sit amet ultrices. Proin tellus velit, porttitor eu rhoncus vitae, semper sit amet
+                turpis. Nam non elementum nulla, ut tristique velit. Sed porta eu arcu et rutrum. Praesent finibus lacus ex, id venenatis diam
+                elementum ac. In cursus congue risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus ut consequat nulla, vitae
+                maximus ipsum. Vestibulum mattis enim vitae bibendum consequat. Praesent lacus nunc, finibus in bibendum sed, convallis non ligula.
+                Aenean gravida, purus a eleifend suscipit, nibh orci pellentesque magna, vitae pretium urna diam sit amet ante. Nam sed imperdiet nulla,
+                quis lobortis ante. Sed eros lorem, mollis non molestie eget, consequat vitae tellus. Duis semper dolor sit amet quam commodo mattis.
+                Duis blandit in eros mollis tempus. Duis elementum mattis nibh id hendrerit. Aenean hendrerit aliquam felis non interdum. Sed vehicula imperdiet elit,
+                non volutpat arcu pharetra et. Suspendisse ut maximus ante. Sed laoreet laoreet diam id dignissim. Aenean pulvinar faucibus est sed mollis. Curabitur.</span>
+        </div>
+        <div id = "formsSection">
+            <!--------------------------SIGN-IN SECTION--------------------->
+            <div id="sign-in-container" class = "formLGN">
+                <h1 class="login-header">Sign in </h1>
+                <form action="#/signin" class="login-form" name="signInForm">
+                    <div class="form-group">
+                        <input type="email" class="email input" name="email"
+                               id="sign-in-email" placeholder="Email..."
+                               data-val="true" data-required="Please enter email address."
+                               data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                    </div>
+                    <span id="signInEmailError">Please enter valid email address.</span>
+                    <div class="form-group">
+                        <input type="password" class="password input" id="sign-in-password" placeholder="Password..."
+                               data-val="true" data-required="Please enter password."
+                               data-pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,16}$"
+                               minlength="8" maxlength="16" required>
+                    </div>
+                    <span id="signInPasswordError">Please enter valid password.</span>
+                    <br>
+                    <a href="#/forgotpassword" class="forgot-password-link">Forgot password?</a>
+                    <input type="submit" value="Sign in" id="signInBtn">
+                </form>
+                <p class="below-form-text">Do not have an account? <a href="#/signup" class="sign-up-link">Sign up</a>
+                </p>
+            </div>
+
+            <!--------------------------SIGN-UP SECTION--------------------->
+
+            <div id = "sign-up-container" class = "formLGN">
+                <h1>Create an account</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id = "signUpError1" name="name" data-val="true" data-required="Please enter your name"
+                                placeholder="Name..." required>
+                    </div>
+                        <span class="error" id = "missingField1">Please enter valid name.</span>
+                    <div class="form-group">
+                        <input type="text" id = "signUpError2" name="surname" data-val="true" data-required="Please enter your surname"
+                               placeholder="Surname..." required>
+                    </div>
+                        <span class="error" id = "missingField2">Please enter valid surname.</span>
+                    <div class="form-group">
+                        <input type="email" name="email" id="emailLabel" data-val="true" data-required="Please enter your email"
+                               data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Email..." required>
+                    </div>
+                        <span class="email" id = "missingField3">Please enter valid email.</span>
+                        <span id ="emailLabelError">Email fields must contain similar data...</span>
+                    <div class="form-group">
+                        <input type="email" name="emailConfirm" id="emailConfirmLabel" data-val="true" data-required="Please confirm your email"
+                               data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Email Confirmation..." required>
+                    </div>
+                        <span class="error" id = "missingField4">Please confirm your email.</span>
+                        <span id ="emailConfirmLabelError">Email fields must contain similar data...</span>
+                    <div class="form-group">
+                        <input type="password" name="password" id="passwordLabel" data-val="true" data-required="Please enter your password" id="password"
+                              placeholder="Password..." required minlength="8" maxlength="16">
+                    </div>
+                        <span class="error" id = "missingField5">Please enter valid password.</span>
+                        <span id = "passwordLabelError">Passwords do not match...</span>
+                    <div class="form-group">
+                        <input type="password" name="passwordConfirm" id="passwordConfirmLabel" data-val="true"
+                               data-required="Please confirm your password" data-confirm="password"
+                               placeholder="Password Confirmation..." required minlength="8" maxlength="16" required>
+                    </div>
+                        <span class="error" id = "missingField6">Please confirm your password.</span>
+                        <span id = "passwordConfirmLabelError">Passwords do not match...</span>
+                    <div id="accept-terms-container">
+                        <label class="checkbox-container">
+                            <input id="checkmark" type="checkbox" name="accept-terms" id="accept-terms" data-val="true" >
+                        </label>
+                        <label for="accept-terms">I accept <a href="#" class="link">Terms of Service</a> and
+                            <a href="#" class="link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <span id="checkmarkText">"To continue, please read and accept our Terms of Service and Privacy Policy"</span>
+                    <div >
+                        <input type="submit" value="Create Account" id = "registerBtn">
+                    </div>
+                    <p class="below-form-text">Already have an account?
+                        <a href="#/signin" class="sign-in-link">Sign in</a>
+                    </p>
+                </form>
+            </div>
+
+            <!---------------------------------------Forgot password section---------------------------->
+
+
+            <div id="forgot-password-container" class = "formLGN">
+                <h1 class="login-header">Forgot your password?</h1>
+                <form action="#/forgotpassword" class="login-form" name="forgotPswForm">
+                    <div class="form-group">
+                        <input type="email" id = "fgtPassForm" class="email input" name="email" placeholder="Email"
+                               data-error-label="forgotPswEmailError" data-val="true" data-required="Please enter email address."
+                               data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                               data-pattern-msg="Please enter valid email address.">
+                    </div>
+
+                    <span class="error" id="forgotPswEmailError">Please enter valid email.</span>
+
+                    <input type="submit" value="Next" class="btn" id = "fgtPassBtn">
+                </form>
+
+                <a href="#/signin" class="back-to-sign-in-link">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <p class="back-text">Back to sign in</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    min-height: 1000px;
+}
+
+body #wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1000px;
+}
+/*********************HEADER-SECTION****************/
+
+body #wrapper header {
+    text-align: center;
+    font-size: 48px;
+    padding: 10px 0;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+
+}
+
+/*********************TEXT-SECTION****************/
+
+body #wrapper #textSection {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+body #wrapper #textSection h2 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px 0;
+    color: white;
+    width: 100%;
+}
+
+body #wrapper #textSection span {
+    padding: 40px;
+    text-align:justify;
+}
+
+/*********************FORMS-SECTION****************/
+
+body #wrapper #formsSection {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 40px;
+}
+
+/*********************SIGN-IN-SECTION****************/
+
+body #wrapper #formsSection #sign-in-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+body #wrapper #formsSection #sign-in-container h1 {
+    margin: 20px;
+}
+
+body #wrapper #formsSection #sign-in-container form {
+    padding: 10px;
+}
+
+body #wrapper #formsSection #sign-in-container form .form-group {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+}
+
+body #wrapper #formsSection #sign-in-container form .form-group input {
+    border: 1px black solid;
+    padding: 0 16px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+body #wrapper #formsSection #sign-in-container form #signInBtn {
+    width: 332px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 20px 0;
+    font-size: 32px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #sign-in-container form #signInBtn:hover {
+    cursor: pointer;
+    color: burlywood;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #sign-in-container form span {
+    display: none;
+}
+
+body #wrapper #formsSection #sign-in-container a {
+    text-decoration: none;
+}
+
+body #wrapper #formsSection #sign-in-container a:hover {
+    color: burlywood;
+    transition: 0.3s;
+}
+
+/*********************SIGN-UP-SECTION****************/
+
+body #wrapper #formsSection #sign-up-container {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+body #wrapper #formsSection #sign-up-container h1 {
+    margin: 20px;
+}
+
+body #wrapper #formsSection #sign-up-container form {
+    padding: 10px;
+}
+
+body #wrapper #formsSection #sign-up-container form .form-group {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+body #wrapper #formsSection #sign-up-container form .form-group input {
+    border: 1px black solid;
+    padding: 0 16px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+body #wrapper #formsSection #sign-up-container form #accept-terms-container {
+    display: flex;
+    padding: 20px;
+}
+
+body #wrapper #formsSection #sign-up-container form #registerBtn {
+    width: 332px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 20px 0;
+    font-size: 32px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #sign-up-container form #registerBtn:hover {
+    cursor: pointer;
+    color: burlywood;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #sign-up-container form span {
+    display: none;
+}
+
+body #wrapper #formsSection #sign-up-container a {
+    text-decoration: none;
+}
+
+body #wrapper #formsSection #sign-up-container a:hover {
+    color: burlywood;
+    transition: 0.3s;
+}
+/*********************FORGOT-PASSWORD-SECTION****************/
+
+body #wrapper #formsSection #forgot-password-container {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+body #wrapper #formsSection #forgot-password-container h1 {
+    margin: 20px;
+}
+
+body #wrapper #formsSection #forgot-password-container form {
+    padding: 10px;
+}
+
+body #wrapper #formsSection #forgot-password-container form .form-group {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+body #wrapper #formsSection #forgot-password-container form .form-group input {
+    border: 1px black solid;
+    padding: 0 16px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 13px;
+}
+
+body #wrapper #formsSection #forgot-password-container form .btn {
+    width: 332px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 20px 0;
+    font-size: 32px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #forgot-password-container form .btn:hover {
+    cursor: pointer;
+    color: burlywood;
+    transition: 0.3s;
+}
+
+body #wrapper #formsSection #forgot-password-container form span {
+    display: none;
+}
+
+body #wrapper #formsSection #forgot-password-container p {
+    padding-bottom: 10px;
+}
+
+body #wrapper #formsSection #forgot-password-container a {
+    text-decoration: none;
+}
+
+body #wrapper #formsSection #forgot-password-container a:hover {
+    color: burlywood;
+    transition: 0.3s;
+}
